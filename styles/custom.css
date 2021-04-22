@@ -1,0 +1,75 @@
+a {
+    color:firebrick;
+
+}
+
+.navbar {
+    background-color:blanchedalmond;
+}
+
+#navbar-tagline {
+
+    color:lavender ;
+    margin-left: 10px;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#greeting {
+
+    color:coral;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    background-color:rgba(255, 228, 196, 0.808);
+    border: 1px solid black;
+
+}
+
+#mini-bio {
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 350;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 3px;
+    background-color: rgba(230, 230, 250, 0.842);
+    color:rgb(88, 88, 88);
+    border-radius: 5px;
+
+}
+
+#nav-box {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(199, 245, 245, 0.863);
+    margin-bottom: 3px;
+    margin-top: 180px;
+    border-radius: 5px;
+    
+}
+
+.nav-hyperlink {
+    font-size: 20px;
+    color:firebrick;
+    font-weight: 350;
+}
+
+.grid-item {
+    float: left;
+    width: 80px;
+    height: 60px;
+    border: 2px solid hsla(0, 0%, 0%, 0.5);
+  }
+  
+  .grid-item--width2 { width: 160px; }
+  .grid-item--height2 { height: 140px; }
+
+.footer {
+    background-color: burlywood;
+}
+
+#img-penguin {
+    height: 50;
+    width: 10;
+}
