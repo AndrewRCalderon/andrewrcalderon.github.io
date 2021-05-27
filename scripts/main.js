@@ -1,13 +1,8 @@
-// const myImage = document.querySelector('img');
+for (let i  = 0; i < 10; i++) {
+  console.log(i)
+}
 
-// myImage.onclick = function(){
-//   const mySrc = myImage.getAttribute('src');
-//   if(mySrc === 'images/happy-penguin.png') {
-//     myImage.setAttribute('src', 'images/sad-penguin.jpeg') 
-//   } else {
-//     myImage.setAttribute('src', 'images/happy-penguin.png')
-//   }
-// };
+
 
 const myButton = document.querySelector('button');
 const myHeading = document.querySelector('h2');
@@ -29,3 +24,6 @@ if (!localStorage.getItem('name')) {
 myButton.onclick = function() {
   setUserName()
 }
+
+
+
