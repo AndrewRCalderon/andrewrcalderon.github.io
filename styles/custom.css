@@ -1,26 +1,51 @@
+
 html {
     background-color: rgba(248, 245, 245, 0.767);
 }
 
 body {
-    margin: 2.5% 15% 2.5% 15%;
+    /* display:block; */
+    width: 65%;
+    margin: 5% auto;
     background-color: white;
-    padding: 10px 20px 20px 20px; 
     border: 2px dashed firebrick;
     box-shadow: 5px 7px rgb(121, 121, 121);
+    border-radius: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
+
+/* Responsiveness */
+@media(max-width: 768px) {
+    .mini-bio {
+        font-size: 12px
+    }
+}
+
+a {
+    color: firebrick;
+}
+
+a:hover {
+    color: rgb(150, 250, 250);
+}
+
+/* a:visited {
+
+    color: rgb(56, 56, 56)
+
+} */
 
 #container-tagline {
     display: block;
-    margin-top: 80px;
+    margin-top: auto;
 }
 
 #tagline {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 40px;
     text-align: center;
-    color:rgb(149, 90, 245);
+    color: rgb(149, 90, 245);
     letter-spacing: .1em;
 }
 
@@ -28,28 +53,25 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     text-align: center;
-    color: rgb(255, 145, 0);
-}
-
-.container-mini-bio {
-    display: block;
-    margin: 0 0 20px;
-    
+    color: rgb(252, 164, 2);
 }
 
 .mini-bio {
-    margin: 10px 150px;
+    display: table;
+    margin: 30px auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 19px;
-    text-align: justify;
+    font-size: 16px;
     line-height: 1.5em;
+    word-spacing: 0.001em;
+    color: rgb(48, 47, 47) */
 }
 
-button { 
-    display: block;
-    margin: 10px auto;
-    padding: 10px 10px;
-    font-size: 20px;
+.mini-bio p {
+    display: table-cell;
+    margin: 0;
+    padding: 50px;
+    vertical-align: middle;
+    text-align: justify;
 }
 
 /* #img-penguin {
@@ -65,27 +87,28 @@ button {
 } */
 
 .g-names {
-    display: block;
     height: 500px;
     width: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
 
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 10px;
+    font-size: 20px;
 }
 
 .nav-links-all {
-    display: block;
-    margin: 80px auto;
+    display: flex;
+    justify-content: center;
 }
 
-.nav-link {
-    display: block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 19px;
-    text-align: center;
-    margin: 15px 350px 15px 350px;
-    /* background-color: rgb(236, 233, 233); */
-    border: 2px solid black;
+.nav-links-all div {
+    padding: 15px;
+    margin: 20px auto;
 }
 
-a {
-    color: firebrick ;
-}
+
