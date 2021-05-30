@@ -89,7 +89,6 @@ a:hover {
 .g-names {
     height: 500px;
     width: 500px;
-    border: 1px solid black;
     margin: 0 auto;
 
 }
@@ -111,4 +110,48 @@ button {
     margin: 20px auto;
 }
 
+.grid {
+    height:500px;
+    width:60%;
+    display: flex;
+    justify-content: center;
+    margin: 10% auto;
+
+  }
+  
+  /* clearfix */
+  /* .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  } */
+  
+  /* ---- grid-item ---- */
+  
+  .grid-item {
+    width: 60px;
+    height: 100px;
+    background: #D26;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+  }
+
+  .grid-item:hover {
+      background:#EA0
+  }
+  
+  .grid-item--width2 { width: 320px; }
+  .grid-item--width3 { width: 480px; }
+  .grid-item--width4 { width: 640px; }
+  
+  .grid-item--height2 { height: 200px; }
+  .grid-item--height3 { height: 260px; }
+  .grid-item--height4 { height: 360px; }
+
+  .grid-item.is-dragging, .grid-item.is-positioning-post-drag {
+    background: #EA0;
+    z-index: 2;
+  
+  
 
