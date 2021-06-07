@@ -1,3 +1,7 @@
+/*  */
+/* Main */
+/*  */
+
 html {
     background-color: rgba(248, 245, 245, 0.767);
 }
@@ -73,6 +77,8 @@ button {
     margin: 30px auto;
     padding: 10px 10px;
     font-size: 20px;
+    background-color: white;
+    color: rgb(85, 85, 85);
 }
 
 .nav-links-all {
