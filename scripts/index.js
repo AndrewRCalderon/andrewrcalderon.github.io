@@ -2,16 +2,16 @@ const myButton = document.querySelector('button');
 const myHeading = document.querySelector('h2');
 
 function setUserName() {
-  const myName = prompt('Please enter your name.');
+  const myName = prompt("Would you mind sharing your name? Promise it'll be worthwhile!");
   localStorage.setItem('name', myName);
-  myHeading.textContent = 'Hello, ' + myName + '!';
+  myHeading.textContent = '¡Hola, ' + myName + '!';
 }
 
 if (!localStorage.getItem('name')) {
   setUserName();
 } else {
   const storedName = localStorage.getItem('name');
-  myHeading.textContent = 'Hello, ' + storedName + '!'
+  myHeading.textContent = '¡Hola, ' + storedName + '!'
 }
 
 
