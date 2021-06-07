@@ -1,11 +1,10 @@
-
 html {
     background-color: rgba(248, 245, 245, 0.767);
 }
 
 body {
     /* display:block; */
-    width: 65%;
+    width: 85%;
     margin: 5% auto;
     background-color: white;
     border: .5px solid black;
@@ -15,26 +14,18 @@ body {
 
 }
 
-/* Responsiveness */
-@media(max-width: 768px) {
-    .mini-bio {
-        font-size: 12px
-    }
-}
-
 a {
-    color: firebrick;
+    color: rgb(197, 55, 55);
 }
 
 a:hover {
-    color: rgb(150, 250, 250);
+    color: rgb(250, 207, 150);
 }
 
-/* a:visited {
 
-    color: rgb(56, 56, 56)
-
-} */
+/*  */
+/* Landing Page */
+/*  */
 
 #container-tagline {
     display: block;
@@ -53,38 +44,22 @@ a:hover {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     text-align: center;
-    color: rgb(252, 164, 2);
+    color: rgb(252, 185, 2);
 }
 
 .mini-bio {
-    display: table;
-    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
     word-spacing: 0.001em;
-    color: rgb(48, 47, 47) */
+    color: rgb(48, 47, 47)
 }
 
-.mini-bio p {
-    display: table-cell;
-    margin: 0;
-    padding: 50px;
-    vertical-align: middle;
-    text-align: justify;
-}
-
-/* #img-penguin {
-    display: block;
-    margin: 0 auto;
-    height: 300px;
-    width: 400px;
-}
-
-#img-penguin:hover {
-    height: 700px;
-    width: 800px;
-} */
 
 .g-names {
     height: 500px;
@@ -110,48 +85,50 @@ button {
     margin: 20px auto;
 }
 
+
+/*  */
+/* Stories Page */
+/*  */
+
+/* Masonry */
+
 .grid {
-    height:500px;
-    width:60%;
+    margin: 5% auto
+}
+
+.grid-item {
+    border-style: solid;
+    border-width: 2px;
+    width: 230px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.grid-item:hover {
+    background: gray;
+}
+
+.grid-item p {
+    text-align: center;
+}
+
+
+#stories-text {
     display: flex;
     justify-content: center;
-    margin: 10% auto;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    word-spacing: 0.001em;
+    color: rgb(48, 47, 47)
+}
 
-  }
-  
-  /* clearfix */
-  /* .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  } */
-  
-  /* ---- grid-item ---- */
-  
-  .grid-item {
-    width: 60px;
-    height: 100px;
-    background: #D26;
-    border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
-    border-radius: 5px;
-  }
-
-  .grid-item:hover {
-      background:#EA0
-  }
-  
-  .grid-item--width2 { width: 320px; }
-  .grid-item--width3 { width: 480px; }
-  .grid-item--width4 { width: 640px; }
-  
-  .grid-item--height2 { height: 200px; }
-  .grid-item--height3 { height: 260px; }
-  .grid-item--height4 { height: 360px; }
-
-  .grid-item.is-dragging, .grid-item.is-positioning-post-drag {
-    background: #EA0;
-    z-index: 2;
-  
-  
-
+/* Responsiveness */
+/* @media(max-width: 768px) {
+    .mini-bio {
+        font-size: 12px
+    }
+} */
