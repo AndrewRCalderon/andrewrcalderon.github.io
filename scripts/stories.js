@@ -11,8 +11,7 @@
 //   });
 
   $('.grid').masonry({
-    columnWidth: 10,
     itemSelector: '.grid-item',
-    gutter: 20,
+    gutter: 5,
     fitWidth: true
   });
