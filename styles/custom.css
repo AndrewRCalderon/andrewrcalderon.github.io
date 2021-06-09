@@ -104,19 +104,50 @@ button {
 
 .grid-item {
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
+    border-color: rgb(250, 207, 150);
     width: 230px;
     height: 300px;
     margin-bottom: 10px;
 }
 
-.grid-item:hover {
-    background: gray;
+.image {
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
-.grid-item p {
-    text-align: center;
+img {
+    position: relative;
+    height: 100%;
+    width: 100%
 }
+
+.story-title {
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+    color: white;
+    text-shadow: 3px 2px 3px black;
+    font-family: monospace;
+    font-weight: lighter;
+    font-size: 25px;
+    visibility: hidden;
+    opacity: 1
+}
+
+.image:hover .story-title {
+    visibility: visible;
+
+}
+
+.image:hover img {
+    filter: grayscale(100%);
+}
+
 
 
 #stories-text {
