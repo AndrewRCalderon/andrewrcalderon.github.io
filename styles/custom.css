@@ -103,9 +103,9 @@ button {
 }
 
 .grid-item {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(250, 207, 150);
+    border-style:inset;
+    border-width: 2px;
+    border-color: rgb(197, 55, 55);
     width: 230px;
     height: 300px;
     margin-bottom: 10px;
@@ -127,16 +127,15 @@ img {
     position: absolute;
     text-align: center;
     top: 10%;
-    bottom: 25%;
     left: 0;
     right: 0;
-    color: white;
-    /* text-shadow: 3px 2px 3px white; */
+    color: black;
+    background-color: white;
     font-family: monospace;
     font-weight: lighter;
     font-size: 25px;
     visibility: hidden;
-    opacity: 1
+    opacity: .7
 }
 
 .image:hover .story-title {
