@@ -2,7 +2,7 @@ const myButton = document.querySelector('button');
 const myHeading = document.querySelector('h2');
 
 function setUserName() {
-  const myName = prompt("Would you mind sharing your name? Promise it'll be worthwhile!");
+  const myName = prompt("Would you mind sharing your name?");
   localStorage.setItem('name', myName);
   myHeading.textContent = '¡Hola, ' + myName + '!';
 }
