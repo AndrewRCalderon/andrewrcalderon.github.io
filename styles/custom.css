@@ -28,7 +28,7 @@ a:hover {
 
 
 /*  */
-/* Landing Page */
+/* Index  */
 /*  */
 
 #container-tagline {
@@ -160,22 +160,6 @@ img {
     color: rgb(48, 47, 47)
 }
 
-/* Responsiveness */
-@media(max-width: 768px) {
-    .mini-bio {
-        font-size: 12px
-    }
-
-    img {
-        filter: grayscale(0%);
-    }
-
-    .image .story-title {
-        visibility: visible;
-    
-    }
-}
-
 /*  */
 /* Resume Page */
 /*  */
@@ -197,3 +181,55 @@ img {
     width: 100%;
     height: 100%;
   }
+
+/*  */
+/* Responsiveness */
+/*  */
+
+@media only screen and (max-width: 768) {
+
+    #tagline {
+        font-size: 30px;
+
+    }
+
+    #sub-tagline {
+        font-size: 20px;
+
+    }
+
+    .mini-bio {
+        font-size: 10px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .image .story-title {
+        visibility: visible;
+    
+    }
+}
+
+/* @media only screen and (max-width: 375) {
+
+    #tagline {
+        font-size: 5px;
+
+    }
+
+    #sub-tagline {
+        font-size: 5px;
+
+    }
+
+    .mini-bio {
+        font-size: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .image .story-title {
+        visibility: visible;
+    
+    }
+} */
