@@ -165,11 +165,11 @@ img {
 }
 
 /* Responsiveness */
-/* @media(max-width: 768px) {
+@media(max-width: 768px) {
     .mini-bio {
         font-size: 12px
     }
-} */
+}
 
 /*  */
 /* Resume Page */
@@ -177,7 +177,7 @@ img {
 
 .resume-container {
     position: relative;
-    padding-bottom: 66.5%; /* 16:9 */
+    padding-bottom: 75.5%; 
     padding-top: 25px;
     height: 0;
   }
