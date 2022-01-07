@@ -142,10 +142,6 @@ img {
 
 }
 
-img {
-    filter: grayscale(100%);
-}
-
 .image:hover img {
     filter: grayscale(0%);
 }
@@ -168,6 +164,15 @@ img {
 @media(max-width: 768px) {
     .mini-bio {
         font-size: 12px
+    }
+
+    img {
+        filter: grayscale(0%);
+    }
+
+    .image .story-title {
+        visibility: visible;
+    
     }
 }
 
