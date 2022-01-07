@@ -164,45 +164,19 @@ img {
 /* Resume Page */
 /*  */
 
-.resume-container {
-    position: relative;
-    padding-bottom: 75.5%; 
-    padding-top: 25px;
-    height: 0;
-  }
-  
-  /* Then style the iframe to fit in the container div with full height and width */
-  .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
+
 
 /*  */
 /* Responsiveness */
 /*  */
 
-@media only screen and (max-width: 768) {
-
-    #tagline {
-        font-size: 30px;
-
-    }
-
-    #sub-tagline {
-        font-size: 20px;
-
-    }
+@media screen and (max-width: 768px) {
 
     .mini-bio {
         font-size: 10px;
         margin-left: 15%;
         margin-right: 15%;
-    }
+    } 
 
     .image .story-title {
         visibility: visible;
@@ -210,26 +184,27 @@ img {
     }
 }
 
-/* @media only screen and (max-width: 375) {
+@media screen and (max-width: 375px) {
 
     #tagline {
-        font-size: 5px;
-
+        font-size: 30px;
     }
 
     #sub-tagline {
-        font-size: 5px;
 
+        font-size: 25px;
     }
 
     .mini-bio {
         font-size: 10px;
         margin-left: 10%;
         margin-right: 10%;
-    }
+    } 
 
     .image .story-title {
         visibility: visible;
     
     }
-} */
+}
+
+
