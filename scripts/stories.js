@@ -12,6 +12,6 @@
 
   $('.grid').masonry({
     itemSelector: '.grid-item',
-    gutter: 5,
+    gutter: 1,
     fitWidth: true
   });

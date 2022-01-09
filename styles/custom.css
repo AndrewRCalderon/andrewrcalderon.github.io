@@ -96,18 +96,53 @@ button {
 /* Stories Page */
 /*  */
 
-/* Masonry */
-
-.grid {
-    margin: 5% auto
+.clearfix {
+    display: inline-block;
 }
 
-.grid-item {
-    border-style: inset;
-    border-width: 1.5px;
-    width: 230px;
-    height: 270px;
-    margin-bottom: 10px;
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.margin1 {
+    margin-top: 08.3333%;
+    margin-left: 08.3333%;
+}
+
+.listing .item {
+    display: block;
+    padding: 2px 0;
+    border-bottom: 1px solid #d4d7d9;
+}
+
+.col12 {
+    width: 100%;
+}
+
+.pad4h {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.portfolio-item {
+    margin-bottom: 4em;
+
+}
+
+.portfolio-img {
+    border: 1px solid #eaeaea;
+    height: 250px;
+    width: 375px
+}
+
+.portfolio-info {
+    width: 49%;
+    padding-right: 5%;
+    float: left;
 }
 
 .image {
@@ -179,11 +214,11 @@ img {
         font-size: 20px;
         margin-left: 15%;
         margin-right: 15%;
-    } 
+    }
 
     .image .story-title {
         visibility: visible;
-    
+
     }
 }
 
@@ -193,11 +228,17 @@ img {
         font-size: 15px;
         margin-left: 15%;
         margin-right: 15%;
-    } 
+    }
 
     .image .story-title {
         visibility: visible;
-    
+
+    }
+
+    .portfolio-img {
+        border: 1px solid #eaeaea;
+        height: 100px;
+        width: 100px
     }
 }
 
@@ -216,12 +257,10 @@ img {
         font-size: 14px;
         margin-left: 10%;
         margin-right: 10%;
-    } 
+    }
 
     .image .story-title {
         visibility: visible;
-    
+
     }
 }
-
-
