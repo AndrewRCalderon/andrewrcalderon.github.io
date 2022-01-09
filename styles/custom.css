@@ -28,6 +28,16 @@ a:hover {
     
 }
 
+.tagline-stories {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(149, 90, 245);
+    letter-spacing: .1em;
+    border: 2px solid #000;
+
+}
+
 
 /*  */
 /* Index  */
@@ -37,6 +47,9 @@ a:hover {
     display: block;
     margin-top: auto;
 }
+
+
+  
 
 #tagline {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
