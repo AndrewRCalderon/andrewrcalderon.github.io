@@ -54,8 +54,8 @@ a:hover {
 .mini-bio {
     display: flex;
     justify-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     text-align: justify;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -176,7 +176,7 @@ img {
 @media screen and (max-width: 1024px) {
 
     .mini-bio {
-        font-size: 16px;
+        font-size: 20px;
         margin-left: 15%;
         margin-right: 15%;
     } 
@@ -187,10 +187,10 @@ img {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
 
     .mini-bio {
-        font-size: 12px;
+        font-size: 15px;
         margin-left: 15%;
         margin-right: 15%;
     } 
@@ -213,7 +213,7 @@ img {
     }
 
     .mini-bio {
-        font-size: 12px;
+        font-size: 14px;
         margin-left: 10%;
         margin-right: 10%;
     } 
