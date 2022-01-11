@@ -18,13 +18,14 @@ body {
 
 }
 
-a {
+.nav-links-all a {
     font-family:Arial, Helvetica, sans-serif;
-    color: rgb(118, 184, 164);
+    color: rgb(120, 206, 180);
+    font-size: 16px;
 }
 
 a:hover {
-    color: rgb(233, 109, 157);
+    color: #D73964;
     
 }
 
@@ -79,6 +80,15 @@ a:hover {
     color: rgb(48, 47, 47)
 }
 
+.mini-bio a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(118, 184, 164);
+    font-size: 16px;
+}
+
+.mini-bio a:hover {
+    color: #D73964;
+}
 
 .g-names {
     height: 500px;
@@ -226,6 +236,10 @@ img {
         margin-right: 15%;
     }
 
+    .mini-bio a {
+        font-size: 20px;
+    }
+
     .image .story-title {
         visibility: visible;
 
@@ -238,6 +252,10 @@ img {
         font-size: 15px;
         margin-left: 15%;
         margin-right: 15%;
+    }
+
+    .mini-bio a {
+        font-size: 15px;
     }
 
     .image .story-title {
@@ -267,6 +285,10 @@ img {
         font-size: 14px;
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    .mini-bio a {
+        font-size: 14px;
     }
 
     .image .story-title {
