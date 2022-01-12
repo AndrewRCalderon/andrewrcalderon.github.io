@@ -18,12 +18,25 @@ body {
 
 }
 
-a {
-    color: rgb(197, 55, 55);
+.nav-links-all a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #D73964;
+    font-size: 16px;
 }
 
 a:hover {
-    color: rgb(250, 207, 150);
+    color: rgb(120, 206, 180);
+    
+}
+
+.tagline-stories {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(149, 90, 245);
+    letter-spacing: .1em;
+    border: 2px solid #000;
+
 }
 
 
@@ -35,6 +48,9 @@ a:hover {
     display: block;
     margin-top: auto;
 }
+
+
+  
 
 #tagline {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -56,7 +72,7 @@ a:hover {
     justify-content: center;
     margin-left: 20%;
     margin-right: 20%;
-    text-align: justify;
+    text-align: start;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -64,6 +80,15 @@ a:hover {
     color: rgb(48, 47, 47)
 }
 
+.mini-bio a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(118, 184, 164);
+    font-size: 16px;
+}
+
+.mini-bio a:hover {
+    color: #D73964;
+}
 
 .g-names {
     height: 500px;
@@ -96,19 +121,69 @@ button {
 /* Stories Page */
 /*  */
 
-/* Masonry */
-
-.grid {
-    margin: 5% auto
+.clearfix {
+    display: inline-block;
 }
 
-.grid-item {
-    border-style: inset;
-    border-width: 1.5px;
-    width: 230px;
-    height: 270px;
-    margin-bottom: 10px;
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
+
+.margin1 {
+    margin-top: 08.3333%;
+    margin-left: 08.3333%;
+}
+
+.listing .item {
+    display: block;
+    padding: 2px 0;
+    border-bottom: 1px solid #d4d7d9;
+}
+
+.col12 {
+    width: 100%;
+}
+
+.pad4h {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.portfolio-item {
+    margin-bottom: 4em;
+
+}
+
+.portfolio-img {
+    border: 1px solid #eaeaea;
+    height: 250px;
+    width: 375px
+}
+
+.portfolio-info {
+    width: 49%;
+    padding-right: 5%;
+    float: left;
+
+}
+
+.portfolio-info h3 {
+    margin-top: 0px;
+    color: rgb(252, 185, 2)
+}
+
+.portfolio-info p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    word-spacing: 0.001em;
+    color: rgb(48, 47, 47)
+}
+
 
 .image {
     position: relative;
@@ -122,31 +197,6 @@ img {
     width: 100%
 }
 
-.story-title {
-    position: absolute;
-    text-align: center;
-    top: 5%;
-    left: 0;
-    right: 0;
-    color: black;
-    background-color: white;
-    font-family: monospace;
-    font-weight: lighter;
-    font-size: 25px;
-    visibility: hidden;
-    opacity: .7
-}
-
-.image:hover .story-title {
-    visibility: visible;
-
-}
-
-.image:hover img {
-    filter: grayscale(0%);
-}
-
-
 #stories-text {
     display: flex;
     justify-content: center;
@@ -159,6 +209,20 @@ img {
     word-spacing: 0.001em;
     color: rgb(48, 47, 47)
 }
+
+.tagline-stories {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(149, 90, 245);
+    letter-spacing: .1em;
+    border: 2px solid #000;
+    padding: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
 
 /*  */
 /* Resume Page */
@@ -179,11 +243,30 @@ img {
         font-size: 20px;
         margin-left: 15%;
         margin-right: 15%;
-    } 
+    }
+
+    .mini-bio a {
+        font-size: 20px;
+    }
 
     .image .story-title {
         visibility: visible;
-    
+
+    }
+
+    .portfolio-info p {
+        font-size: 20px;
+   
+    }
+
+    .portfolio-img {
+        width: 100%;
+        border: 1px solid #eee;
+        margin-bottom: 1em;
+    }
+
+    .portfolio-info {
+        width: 100%;
     }
 }
 
@@ -193,11 +276,30 @@ img {
         font-size: 15px;
         margin-left: 15%;
         margin-right: 15%;
-    } 
+    }
+
+    .mini-bio a {
+        font-size: 15px;
+    }
 
     .image .story-title {
         visibility: visible;
-    
+
+    }
+
+    .portfolio-img {
+        width: 100%;
+        border: 1px solid #eee;
+        margin-bottom: 1em;
+    }
+
+    .portfolio-info {
+        width: 100%;
+    }
+
+    .portfolio-info p {
+        font-size: 15px;
+   
     }
 }
 
@@ -216,12 +318,32 @@ img {
         font-size: 14px;
         margin-left: 10%;
         margin-right: 10%;
-    } 
+    }
+
+    .mini-bio a {
+        font-size: 14px;
+    }
 
     .image .story-title {
         visibility: visible;
-    
+
     }
+
+    .portfolio-info p {
+        font-size: 14px;
+   
+    }
+
+    .portfolio-img {
+        width: 99%;
+        border: 1px solid #eee;
+        margin-bottom: 1em;
+        margin-right: 10%;
+    }
+
+    .portfolio-info {
+        width: 100%;
+    }
+
+    
 }
-
-
