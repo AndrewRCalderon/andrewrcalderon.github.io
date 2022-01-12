@@ -176,6 +176,14 @@ button {
     color: rgb(252, 185, 2)
 }
 
+.portfolio-info p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    word-spacing: 0.001em;
+    color: rgb(48, 47, 47)
+}
+
 
 .image {
     position: relative;
@@ -245,6 +253,21 @@ img {
         visibility: visible;
 
     }
+
+    .portfolio-info p {
+        font-size: 20px;
+   
+    }
+
+    .portfolio-img {
+        width: 100%;
+        border: 1px solid #eee;
+        margin-bottom: 1em;
+    }
+
+    .portfolio-info {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 765px) {
@@ -265,9 +288,18 @@ img {
     }
 
     .portfolio-img {
-        border: 1px solid #eaeaea;
-        height: 100px;
-        width: 100px
+        width: 100%;
+        border: 1px solid #eee;
+        margin-bottom: 1em;
+    }
+
+    .portfolio-info {
+        width: 100%;
+    }
+
+    .portfolio-info p {
+        font-size: 15px;
+   
     }
 }
 
@@ -296,4 +328,22 @@ img {
         visibility: visible;
 
     }
+
+    .portfolio-info p {
+        font-size: 14px;
+   
+    }
+
+    .portfolio-img {
+        width: 99%;
+        border: 1px solid #eee;
+        margin-bottom: 1em;
+        margin-right: 10%;
+    }
+
+    .portfolio-info {
+        width: 100%;
+    }
+
+    
 }
