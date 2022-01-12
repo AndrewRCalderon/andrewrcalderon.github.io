@@ -171,6 +171,10 @@ button {
 
 }
 
+.portfolio-info a {
+    text-decoration: none
+}
+
 .portfolio-info h3 {
     margin-top: 0px;
     color: rgb(252, 185, 2)
