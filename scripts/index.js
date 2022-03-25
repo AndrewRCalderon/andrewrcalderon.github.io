@@ -20,8 +20,3 @@ if (!localStorage.getItem("name")) {
   const storedName = localStorage.getItem("name");
   myHeading.textContent = "¡Hola, " + storedName + "!";
 }
-
-// Button functionality
-myButton.onclick = function () {
-  setUserName();
-};
