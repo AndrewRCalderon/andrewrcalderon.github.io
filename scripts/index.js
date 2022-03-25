@@ -3,9 +3,8 @@ const myHeading = document.querySelector("container-tagline");
 
 function setUserName() {
   const myName = prompt("Would you mind sharing your name?");
-  if (myName === "") {
-    myHeading.textContent = "¡Hola!";
-  } else if (myName) {
+
+  if (myName) {
     localStorage.setItem("name", myName);
     myHeading.textContent = "¡Hola, " + myName + "!";
   } else {
