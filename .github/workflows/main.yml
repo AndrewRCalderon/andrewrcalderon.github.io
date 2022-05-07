@@ -26,7 +26,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
       - name: Configure AWS
-        run: echo ${{ secrets.BUCKET_NAME }}
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME}}
