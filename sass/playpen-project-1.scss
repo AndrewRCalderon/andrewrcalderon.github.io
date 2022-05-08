@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+.img-penguin {
+  img {
+    animation-name: shrink-grow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes shrink-grow {
+  10% {
+    transform: translateX(10px);
+  }
+
+  15% {
+    transform: translateX(-20px);
+  }
+
+  20% {
+    transform: translateX(25px);
+  }
+
+  50% {
+    transform: translateY(-72px);
+    transform: scale(-1.7);
+  }
+
+  100% {
+    display: none;
+  }
+}
