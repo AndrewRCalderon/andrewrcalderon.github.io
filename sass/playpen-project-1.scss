@@ -1,11 +1,32 @@
 body {
-  background-color: black;
+  background-color: white;
 }
-.img-penguin {
-  img {
-    animation-name: shrink-grow;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+
+.collage {
+  position: absolute;
+
+  .img-penguin {
+    img {
+      position: relative;
+      animation-name: shrink-grow;
+      animation-duration: 5s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  .img-blobs {
+    display: block;
+
+    .blob-3 {
+      position: relative;
+      margin-top: 100px;
+      opacity: 0;
+      animation-name: reveal-blob;
+      animation-duration: 2s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
   }
 }
 
@@ -29,5 +50,15 @@ body {
 
   100% {
     display: none;
+  }
+}
+
+@keyframes reveal-blob {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
