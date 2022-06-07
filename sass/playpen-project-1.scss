@@ -3,27 +3,28 @@ body {
 }
 
 .collage {
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
 
-  .img-penguin {
+  .photo {
+    display: flex;
+    width: 33.33333%;
+
     img {
-      position: relative;
-      animation-name: shrink-grow;
-      animation-duration: 5s;
-      animation-direction: alternate;
-      animation-iteration-count: infinite;
+      width: 50%;
+      justify-content: center;
     }
   }
 
-  .img-blobs {
-    display: block;
+  .text {
+    display: flex;
+    width: 33.33333%;
 
-    .blob-3 {
-      position: relative;
-      margin-top: 100px;
-      opacity: 0;
-      animation-name: reveal-blob;
-      animation-duration: 2s;
+    img {
+      width: 50%;
+      justify-content: center;
+      animation-name: shrink-grow;
+      animation-duration: 5s;
       animation-direction: alternate;
       animation-iteration-count: infinite;
     }

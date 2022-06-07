@@ -3,24 +3,26 @@ body {
 }
 
 .collage {
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
 }
-.collage .img-penguin img {
-  position: relative;
+.collage .photo {
+  display: flex;
+  width: 33.33333%;
+}
+.collage .photo img {
+  width: 50%;
+  justify-content: center;
+}
+.collage .text {
+  display: flex;
+  width: 33.33333%;
+}
+.collage .text img {
+  width: 50%;
+  justify-content: center;
   animation-name: shrink-grow;
   animation-duration: 5s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-}
-.collage .img-blobs {
-  display: block;
-}
-.collage .img-blobs .blob-3 {
-  position: relative;
-  margin-top: 100px;
-  opacity: 0;
-  animation-name: reveal-blob;
-  animation-duration: 2s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
