@@ -1,17 +1,18 @@
 body {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .collage {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 
   .photo {
     display: flex;
     width: 33.33333%;
 
     img {
-      width: 50%;
+      width: 60%;
+      margin-left: 100px;
       justify-content: center;
     }
   }
@@ -22,6 +23,7 @@ body {
 
     img {
       width: 50%;
+      margin-left: 10px;
       justify-content: center;
       animation-name: shrink-grow;
       animation-duration: 5s;
@@ -51,15 +53,5 @@ body {
 
   100% {
     display: none;
-  }
-}
-
-@keyframes reveal-blob {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
   }
 }

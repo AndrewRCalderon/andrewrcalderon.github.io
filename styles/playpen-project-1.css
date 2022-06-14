@@ -1,17 +1,18 @@
 body {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .collage {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 .collage .photo {
   display: flex;
   width: 33.33333%;
 }
 .collage .photo img {
-  width: 50%;
+  width: 60%;
+  margin-left: 100px;
   justify-content: center;
 }
 .collage .text {
@@ -20,6 +21,7 @@ body {
 }
 .collage .text img {
   width: 50%;
+  margin-left: 10px;
   justify-content: center;
   animation-name: shrink-grow;
   animation-duration: 5s;
@@ -43,14 +45,6 @@ body {
   }
   100% {
     display: none;
-  }
-}
-@keyframes reveal-blob {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
