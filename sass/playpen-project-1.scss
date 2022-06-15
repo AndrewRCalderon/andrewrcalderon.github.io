@@ -14,6 +14,30 @@ body {
       width: 70%;
       justify-content: center;
     }
+
+    &.grid-2 {
+      animation: spin-center-grid-2;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    &.grid-4 {
+      animation: spin-center-grid-4;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    &.grid-6 {
+      animation: spin-center-grid-6;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    &.grid-8 {
+      animation: spin-center-grid-8;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
   }
 
   .text {
@@ -26,6 +50,7 @@ body {
       justify-content: center;
       animation-name: shrink-grow;
       animation-duration: 5s;
+      animation-delay: 5s;
       animation-direction: alternate;
       animation-iteration-count: infinite;
     }
@@ -33,24 +58,52 @@ body {
 }
 
 @keyframes shrink-grow {
-  10% {
-    transform: translateX(10px);
-  }
-
-  15% {
-    transform: translateX(-20px);
-  }
-
-  20% {
-    transform: translateX(25px);
-  }
-
-  50% {
-    transform: translateY(-72px);
-    transform: scale(-1.2);
+  0% {
+    opacity: 0;
   }
 
   100% {
-    display: none;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes spin-center-grid-2 {
+  0% {
+    transform: translateY(100%) rotateZ(0deg) scale(0);
+  }
+
+  100% {
+    transform: translateY(0%) rotateZ(360deg);
+  }
+}
+
+@keyframes spin-center-grid-4 {
+  0% {
+    transform: translateX(100%) rotateZ(0deg) scale(0);
+  }
+
+  100% {
+    transform: translateX(0%) rotateZ(360deg);
+  }
+}
+
+@keyframes spin-center-grid-6 {
+  0% {
+    transform: translateX(-100%) rotateZ(0deg) scale(0);
+  }
+
+  100% {
+    transform: translateX(0%) rotateZ(360deg);
+  }
+}
+
+@keyframes spin-center-grid-8 {
+  0% {
+    transform: translateY(-100%) rotateZ(0deg) scale(0);
+  }
+
+  100% {
+    transform: translateY(0%) rotateZ(360deg);
   }
 }
