@@ -18,25 +18,21 @@ body {
     &.grid-2 {
       animation: spin-center-grid-2;
       animation-duration: 5s;
-      animation-iteration-count: infinite;
     }
 
     &.grid-4 {
       animation: spin-center-grid-4;
       animation-duration: 5s;
-      animation-iteration-count: infinite;
     }
 
     &.grid-6 {
       animation: spin-center-grid-6;
       animation-duration: 5s;
-      animation-iteration-count: infinite;
     }
 
     &.grid-8 {
       animation: spin-center-grid-8;
       animation-duration: 5s;
-      animation-iteration-count: infinite;
     }
   }
 
@@ -52,7 +48,6 @@ body {
       animation-duration: 5s;
       animation-delay: 5s;
       animation-direction: alternate;
-      animation-iteration-count: infinite;
     }
   }
 }

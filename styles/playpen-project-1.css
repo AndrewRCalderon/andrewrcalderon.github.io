@@ -17,22 +17,18 @@ body {
 .collage .photo.grid-2 {
   animation: spin-center-grid-2;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 .collage .photo.grid-4 {
   animation: spin-center-grid-4;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 .collage .photo.grid-6 {
   animation: spin-center-grid-6;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 .collage .photo.grid-8 {
   animation: spin-center-grid-8;
   animation-duration: 5s;
-  animation-iteration-count: infinite;
 }
 .collage .text {
   display: flex;
@@ -46,7 +42,6 @@ body {
   animation-duration: 5s;
   animation-delay: 5s;
   animation-direction: alternate;
-  animation-iteration-count: infinite;
 }
 
 @keyframes shrink-grow {
