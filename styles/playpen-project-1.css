@@ -11,8 +11,7 @@ body {
   width: 33.33333%;
 }
 .collage .photo img {
-  width: 60%;
-  margin-left: 100px;
+  width: 70%;
   justify-content: center;
 }
 .collage .text {
