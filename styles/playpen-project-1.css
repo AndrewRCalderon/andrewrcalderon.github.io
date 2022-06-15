@@ -40,7 +40,7 @@ body {
   }
   50% {
     transform: translateY(-72px);
-    transform: scale(-1.7);
+    transform: scale(-1.2);
   }
   100% {
     display: none;
