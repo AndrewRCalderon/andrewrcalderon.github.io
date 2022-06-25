@@ -43,7 +43,20 @@ body {
   animation-delay: 5s;
   animation-direction: alternate;
 }
+.collage .text .sprite-container {
+  width: 64%;
+  margin-left: 10px;
+  justify-content: center;
+  background: url("../images/playpen-1/does-this-sound-gay.png") 0 0 no-repeat;
+  animation: does-this-sound-sprite 3s steps(14) alternate-reverse;
+  animation-delay: 5s;
+}
 
+@keyframes does-this-sound-sprite {
+  to {
+    background-position: -4460px 0;
+  }
+}
 @keyframes shrink-grow {
   0% {
     opacity: 0;
