@@ -5,6 +5,9 @@ body {
 .collage {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  width: 60vw;
+  margin: auto;
 }
 .collage .photo {
   display: flex;
@@ -19,16 +22,24 @@ body {
   animation-duration: 5s;
 }
 .collage .photo.grid-4 {
+  transform: translateY(100%);
   animation: spin-center-grid-4;
   animation-duration: 5s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
 }
 .collage .photo.grid-6 {
+  transform: translateY(-100%);
   animation: spin-center-grid-6;
   animation-duration: 5s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
 }
 .collage .photo.grid-8 {
+  transform: translateX(100%);
   animation: spin-center-grid-8;
   animation-duration: 5s;
+  animation-delay: 15s;
 }
 .collage .text {
   display: flex;
@@ -43,18 +54,30 @@ body {
   animation-delay: 5s;
   animation-direction: alternate;
 }
-.collage .text .sprite-container {
-  width: 64%;
-  margin-left: 10px;
+.collage .text .sprite-container-1 {
+  width: 430px;
+  height: 200px;
   justify-content: center;
+  background: url("../images/playpen-1/do-they-know.png") 0 0 no-repeat;
+  animation: do-they-know 3s steps(11);
+  animation-delay: 5s;
+}
+.collage .text .sprite-container-2 {
+  width: 310px;
+  height: 200px;
   background: url("../images/playpen-1/does-this-sound-gay.png") 0 0 no-repeat;
-  animation: does-this-sound-sprite 3s steps(14) alternate-reverse;
+  animation: does-this-sound-sprite 3s steps(13);
   animation-delay: 5s;
 }
 
 @keyframes does-this-sound-sprite {
   to {
-    background-position: -4460px 0;
+    background-position: -4172px;
+  }
+}
+@keyframes do-they-know {
+  to {
+    background-position: -5000px;
   }
 }
 @keyframes shrink-grow {
@@ -72,18 +95,18 @@ body {
   }
 }
 @keyframes spin-center-grid-4 {
-  from {
-    transform: translateY(100%);
+  to {
+    transform: translateY(0%);
   }
 }
 @keyframes spin-center-grid-6 {
-  from {
-    transform: translateY(-100%);
+  to {
+    transform: translateY(0%);
   }
 }
 @keyframes spin-center-grid-8 {
-  from {
-    transform: translateX(100%);
+  to {
+    transform: translateX(0%);
   }
 }
 
