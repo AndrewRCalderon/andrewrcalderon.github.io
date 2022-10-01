@@ -15,7 +15,6 @@ body {
 
     img {
       width: 70%;
-      justify-content: center;
     }
 
     &.grid-2 {
@@ -44,6 +43,7 @@ body {
       animation: spin-center-grid-8;
       animation-duration: 5s;
       animation-delay: 15s;
+      animation-fill-mode: forwards;
     }
   }
 
@@ -67,7 +67,7 @@ body {
       justify-content: center;
       background: url("../images/playpen-1/do-they-know.png") 0 0 no-repeat;
       animation: do-they-know 3s steps(11);
-      animation-delay: 5s;
+      animation-delay: 15s;
     }
     .sprite-container-2 {
       width: 310px;
@@ -75,7 +75,7 @@ body {
       background: url("../images/playpen-1/does-this-sound-gay.png") 0 0
         no-repeat;
       animation: does-this-sound-sprite 3s steps(13);
-      animation-delay: 5s;
+      animation-delay: 10s;
     }
   }
 }
