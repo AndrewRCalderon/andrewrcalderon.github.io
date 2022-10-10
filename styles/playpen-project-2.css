@@ -3,4 +3,13 @@ body {
   height: auto;
 }
 
+.g-chart-container {
+  display: flex;
+  flex-direction: row;
+}
+.g-chart-container #g-simple-viz {
+  flex-basis: 25%;
+  height: auto;
+}
+
 /*# sourceMappingURL=playpen-project-2.css.map */

@@ -2,7 +2,7 @@
 import * as d3 from "d3";
 
 function drawChart() {
-  const containerID = document.querySelector("#simple-viz-g");
+  const containerID = document.querySelector("#g-simple-viz");
   const aspectRatio = 16 / 12;
   const width = containerID.clientWidth;
   const height = width * aspectRatio;
@@ -14,7 +14,10 @@ function drawChart() {
 
   const svg = d3.select(containerID).append("svg");
 
-  svg.attr("height", height).attr("width", width);
+  svg
+    .attr("height", height)
+    .attr("width", width)
+    .attr("class", "g-simple-small-multiples-bar-chart");
 
   console.log(svg);
 }
