@@ -24,14 +24,38 @@ function drawChart() {
 
 drawChart();
 
-// const userAction = async () => {
-//     const response = await fetch('http://example.com/movies.json', {
-//       method: 'POST',
-//       body: myBody, // string or object
-//       headers: {
-//         'Content-Type': 'application/json'
-//       }
-//     });
-//     const myJson = await response.json(); //extract JSON from the http response
-//     // do something with myJson
-//   }
+const requestData = async () => {
+  const response = await fetch(
+    "https://api-datadashboard.fda.gov/v1/inspections_classifications",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "http://localhost:8080",
+        "Authorization-User": "andrewrcalderon@gmail.com",
+        "Authorization-Key": "U3E6V3AG26USW0Q",
+      },
+      body: JSON.stringify({
+        start: 1,
+        rows: 10,
+        sort: "InspectionEndDate",
+        sortorder: "ASC",
+        filters: {
+          InspectionEndDateFrom: ["2001-11-27"],
+          InspectionEndDateTo: ["2020-11-27"],
+        },
+        columns: [
+          "FEINumber",
+          "LegalName",
+          "InspectionID",
+          "Classification",
+          "InspectionEndDate",
+        ],
+      }),
+    }
+  );
+  const myJson = await response.json();
+  console.log(myJson);
+};
+
+requestData();
