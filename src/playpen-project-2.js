@@ -1,6 +1,10 @@
 // imports
 import * as d3 from "d3";
 
+// Reporting questions:
+// 1. What are the most common entites that arise (overall and by year?
+// 2. What is the most common program area? How has that changed over time?
+
 function drawChart() {
   const containerID = document.querySelector("#g-simple-viz");
   const aspectRatio = 16 / 12;
@@ -26,7 +30,7 @@ drawChart();
 
 const requestData = async () => {
   const response = await fetch(
-    "https://api-datadashboard.fda.gov/v1/inspections_classifications",
+    "https://api-datadashboard.fda.gov/v1/import_refusals",
     {
       method: "POST",
       headers: {
@@ -37,25 +41,31 @@ const requestData = async () => {
       },
       body: JSON.stringify({
         start: 1,
-        rows: 10,
-        sort: "InspectionEndDate",
+        sort: "RefusalDate",
         sortorder: "ASC",
         filters: {
-          InspectionEndDateFrom: ["2001-11-27"],
-          InspectionEndDateTo: ["2020-11-27"],
+          RefusalDateFrom: ["2001-10-01"],
+          RefusalDateTo: ["2022-10-05"],
         },
         columns: [
           "FEINumber",
-          "LegalName",
-          "InspectionID",
-          "Classification",
-          "InspectionEndDate",
+          "FirmName",
+          "CountryName",
+          "DistrictDescription",
+          "IndustryCodeDescription",
+          "ProductCodeDescription",
+          "RefusalDate",
+          "FDASampleAnalysis",
+          "PrivateLabAnalysis",
+          "RefusalCharges",
         ],
       }),
     }
   );
   const myJson = await response.json();
-  console.log(myJson);
+
+  return myJson.result;
 };
 
-requestData();
+const data = await requestData();
+console.log(data);
