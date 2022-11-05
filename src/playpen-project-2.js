@@ -2,8 +2,14 @@
 import * as d3 from "d3";
 
 // Reporting questions:
-// 1. What are the most common entites that arise (overall and by year?
-// 2. What is the most common program area? How has that changed over time?
+
+// I think I would like to take an outlier first approach here,
+// just because WHY NOT
+
+// 1. The relationship between sampling and the refusal reason?
+// 2. What countries appear most & least often and how did that change over time?
+// 3. What are the most common and uncommon industry and product types?
+// 4. What are the most common and uncommon district offices?
 
 function drawChart() {
   const containerID = document.querySelector("#g-simple-viz");
@@ -48,7 +54,6 @@ const requestData = async () => {
           RefusalDateTo: ["2022-10-05"],
         },
         columns: [
-          "FEINumber",
           "FirmName",
           "CountryName",
           "DistrictDescription",
